@@ -9,6 +9,8 @@
 
 [第三方库](#disanfang)
 
+[git使用](#git)
+
 <h1 id="zhiYiShiXiang">注意事项</h1>
 
 使用Xcode7、swift2.0 开发
