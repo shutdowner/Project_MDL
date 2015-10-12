@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IZ1-2r-PGK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WcZ-UQ-ftF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -158,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AG-hf-KBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642.79999999999995" y="-1678.9133333333334"/>
+            <point key="canvasLocation" x="1174.5" y="-1679.5"/>
         </scene>
         <!--汽车列表-->
         <scene sceneID="xrP-ip-99X">
@@ -259,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1C-cF-nT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059.5999999999999" y="-1251.9666666666667"/>
+            <point key="canvasLocation" x="1591.5" y="-1252.5"/>
         </scene>
         <!--更多图片-->
         <scene sceneID="Ker-NT-vHH">
@@ -336,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgb-Wy-5EG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1403.5999999999999" y="-2639.7799999999997"/>
+            <point key="canvasLocation" x="1532.5" y="-2663.5"/>
         </scene>
         <!--车型参数-->
         <scene sceneID="WM6-BS-gvu">
@@ -371,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihK-hE-g48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829.2" y="-2654.9266666666667"/>
+            <point key="canvasLocation" x="1977.5" y="-2663.5"/>
         </scene>
         <!--预约试驾-->
         <scene sceneID="Ubt-ag-ark">
@@ -472,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAD-O9-ytt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1835.5999999999999" y="-1987.5266666666666"/>
+            <point key="canvasLocation" x="2509.5" y="-1988.5"/>
         </scene>
         <!--车型列表-->
         <scene sceneID="rNx-oh-Dxe">
@@ -505,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6T-wf-vWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059.5999999999999" y="-1987.5266666666666"/>
+            <point key="canvasLocation" x="1591.5" y="-1988.5"/>
         </scene>
         <!--Car Detail Table View Controller-->
         <scene sceneID="JG4-0e-6ou">
@@ -694,26 +693,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aux-UM-fm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413.2" y="-1987.5266666666666"/>
-        </scene>
-        <!--ShowCars-->
-        <scene sceneID="Bq1-FL-F7Y">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IZ1-2r-PGK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ShowCars" id="qtM-Bw-456" userLabel="ShowCars"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wWF-h4-ccy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fei-O5-ZCP" kind="relationship" relationship="rootViewController" id="QI4-h4-JhK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hDJ-sH-nqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="234.66666666666666" y="-1620.6933333333334"/>
+            <point key="canvasLocation" x="2064.5" y="-1988.5"/>
         </scene>
         <!--Car Parameter Table View Controller-->
         <scene sceneID="ZdF-H0-AxN">
@@ -1239,13 +1219,31 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z37-3b-Fo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2210.8000000000002" y="-2654.4533333333334"/>
+            <point key="canvasLocation" x="2436.5" y="-2655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HSw-9i-Pva">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WcZ-UQ-ftF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qTG-Aw-2or">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fei-O5-ZCP" kind="relationship" relationship="rootViewController" id="jlW-fa-Hmv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFb-pG-uvC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="-1679"/>
         </scene>
     </scenes>
     <resources>
         <image name="test.jpg" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XpM-9J-3aJ"/>
+        <segue reference="gam-se-ukv"/>
     </inferredMetricsTieBreakers>
 </document>

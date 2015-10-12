@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor=UIColor.blueColor()
         UINavigationBar.appearance().tintColor=UIColor.whiteColor()
         UINavigationBar.appearance().translucent=true
-        
+  
         // Override point for customization after application launch.
         return true
     }
