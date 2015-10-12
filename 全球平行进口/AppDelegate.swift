@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 22.0) {
             UINavigationBar.appearance().titleTextAttributes =
                 [NSForegroundColorAttributeName:UIColor.whiteColor(), NSFontAttributeName:barFont]

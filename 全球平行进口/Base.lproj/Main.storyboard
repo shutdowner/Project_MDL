@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="5sA-Az-wXK">
             <objects>
-                <tabBarController id="VoV-Xn-ip9" customClass="ViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="VoV-Xn-ip9" customClass="MainViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="VMh-cx-a4n"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="tUd-DB-nUl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
