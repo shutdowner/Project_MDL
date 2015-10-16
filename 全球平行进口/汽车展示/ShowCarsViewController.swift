@@ -20,12 +20,12 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     @IBOutlet weak var searchBar: UISearchBar!
     var carInfoArray = [CarSimpleInfo]()
-    var brandInfoArray = [CarSimpleInfo]()
-    var brandSectionArray:[String]{
-        get{
-            return searchForSection(brandInfoArray)
+    var brandInfoArray = [CarSimpleInfo](){
+        didSet{
+            brandSectionArray = searchForSection(brandInfoArray)
         }
-    }// = [String]()
+    }
+    var brandSectionArray:[String]?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -144,14 +144,20 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
     //索引数量
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return brandSectionArray.count
+        if brandSectionArray == nil{
+            return 0
+        }
+        return brandSectionArray!.count
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return brandSectionArray[section]
+        return brandSectionArray![section]
     }
     func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-        return brandSectionArray
+        if brandSectionArray == nil{
+            return nil
+        }
+        return brandSectionArray!
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
