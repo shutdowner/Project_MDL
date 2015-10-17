@@ -10,9 +10,11 @@ import UIKit
 
 class MyInfoViewController: UIViewController {
 
+    @IBOutlet weak var userName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userName.text = userDefaults.objectForKey("userName") as? String
         // Do any additional setup after loading the view.
     }
 
@@ -29,7 +31,10 @@ class MyInfoViewController: UIViewController {
         let main = MainViewController()
         main.loadAllViewController()
         main.selectedIndex = 2
-        presentViewController(main, animated: true, completion: nil)
+        dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+        //presentViewController(main, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

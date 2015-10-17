@@ -53,6 +53,9 @@
                     <navigationItem key="navigationItem" title="我的" id="WXM-XC-DqV" customClass="my"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="userName" destination="8MV-oO-cpy" id="SDE-MQ-t5q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byD-M2-Uux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
