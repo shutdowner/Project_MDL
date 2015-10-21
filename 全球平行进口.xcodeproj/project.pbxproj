@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		355C1D471BD7A73700E9B8AA /* JoinUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C1D461BD7A73700E9B8AA /* JoinUsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CB2E84C01BC52D23005ACED0 /* CarDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E84BF1BC52D23005ACED0 /* CarDetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CB74F0F81BBACB9600D84E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74F0F61BBACB9600D84E1D /* Main.storyboard */; };
 		CB74F0FD1BBACB9600D84E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74F0FB1BBACB9600D84E1D /* LaunchScreen.storyboard */; };
@@ -60,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		355C1D461BD7A73700E9B8AA /* JoinUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinUsViewController.swift; sourceTree = "<group>"; };
 		CB2E84BF1BC52D23005ACED0 /* CarDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailTableViewController.swift; sourceTree = "<group>"; };
 		CB74F0EF1BBACB9600D84E1D /* 全球平行进口.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "全球平行进口.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB74F0F71BBACB9600D84E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				CB89BC7F1BCBB4C7007EC890 /* LogInViewController.swift */,
 				CB89BC801BCBB4C7007EC890 /* MyInfoViewController.swift */,
 				CB89BC811BCBB4C7007EC890 /* SignInViewController.swift */,
+				355C1D461BD7A73700E9B8AA /* JoinUsViewController.swift */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				CBE1E3291BC41D5B0098E9EF /* MJRefreshBackNormalFooter.m in Sources */,
 				CBE1E3211BC41D5B0098E9EF /* MJRefreshBackFooter.m in Sources */,
 				CBDEED2D1BBAED5E00F07FA9 /* NewsViewController.swift in Sources */,
+				355C1D471BD7A73700E9B8AA /* JoinUsViewController.swift in Sources */,
 				CBE1E3401BC423AF0098E9EF /* BrandSimpleInfoTableViewCell.swift in Sources */,
 				CB89BC821BCBB4C7007EC890 /* LogInViewController.swift in Sources */,
 				CBB28A991BC6A70400FF9D42 /* CarOfBrandTableViewCell.swift in Sources */,

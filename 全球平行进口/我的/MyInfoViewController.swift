@@ -10,11 +10,17 @@ import UIKit
 
 class MyInfoViewController: UIViewController {
 
+    @IBOutlet weak var userImg: UIImageView!
     @IBOutlet weak var userName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userName.text = userDefaults.objectForKey("userName") as? String
+        userImg.layer.cornerRadius = userImg.frame.width/2
+        userImg.layer.masksToBounds=true
+        userImg.layer.borderWidth = 1
+        userImg.layer.borderColor = UIColor.grayColor().CGColor
+        
         // Do any additional setup after loading the view.
     }
 
