@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="e73-U2-jLH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="e73-U2-jLH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -16,17 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvW-O6-tCn">
-                                <rect key="frame" x="138" y="273" width="43" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1N-Xw-duG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7aX-9K-Owr">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                                        <animations/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUM-hV-vff">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="229"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="229" id="8Nl-uZ-Qsy"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="z4b-UJ-4cx" kind="embed" id="Y9w-2d-5e8"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="RUM-hV-vff" firstAttribute="centerX" secondItem="Q1N-Xw-duG" secondAttribute="centerX" id="R1H-vx-hQf"/>
+                                    <constraint firstItem="7aX-9K-Owr" firstAttribute="centerX" secondItem="Q1N-Xw-duG" secondAttribute="centerX" id="cHI-l9-IXD"/>
+                                    <constraint firstItem="7aX-9K-Owr" firstAttribute="width" secondItem="Q1N-Xw-duG" secondAttribute="width" id="cuP-bW-dKR"/>
+                                    <constraint firstItem="7aX-9K-Owr" firstAttribute="top" secondItem="Q1N-Xw-duG" secondAttribute="top" id="d0f-so-tEw"/>
+                                    <constraint firstItem="RUM-hV-vff" firstAttribute="width" secondItem="Q1N-Xw-duG" secondAttribute="width" id="qBi-Zr-Axh"/>
+                                    <constraint firstItem="RUM-hV-vff" firstAttribute="top" secondItem="7aX-9K-Owr" secondAttribute="bottom" id="tkL-lN-ODE"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YvW-O6-tCn" firstAttribute="centerY" secondItem="o55-B9-BSN" secondAttribute="centerY" id="66i-Uf-3oz"/>
-                            <constraint firstItem="YvW-O6-tCn" firstAttribute="centerX" secondItem="o55-B9-BSN" secondAttribute="centerX" id="K3H-mO-l64"/>
+                            <constraint firstItem="Q1N-Xw-duG" firstAttribute="width" secondItem="o55-B9-BSN" secondAttribute="width" id="6u0-mj-0vb"/>
+                            <constraint firstItem="Q1N-Xw-duG" firstAttribute="height" secondItem="o55-B9-BSN" secondAttribute="height" constant="-113" id="XJ1-n9-Kbc"/>
+                            <constraint firstItem="Q1N-Xw-duG" firstAttribute="centerX" secondItem="o55-B9-BSN" secondAttribute="centerX" id="nme-2B-O5h"/>
+                            <constraint firstItem="Q1N-Xw-duG" firstAttribute="centerY" secondItem="o55-B9-BSN" secondAttribute="centerY" constant="7.5" id="o3z-zi-uS3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="新闻活动" id="LO8-2Z-uNu"/>
@@ -44,6 +73,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NA0-gx-eoR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -53,6 +83,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aeo-rr-aom" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="667" y="-1003"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H5L-m4-NFH">
+            <objects>
+                <viewController id="z4b-UJ-4cx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TgM-ge-hsb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdS-C6-lch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="-1451.5"/>
         </scene>
     </scenes>
 </document>
