@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6B8B451BE7866100CCEFD9 /* Aboutusmain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B8B431BE7866100CCEFD9 /* Aboutusmain.swift */; settings = {ASSET_TAGS = (); }; };
+		3E6B8B461BE7866100CCEFD9 /* Aboutusdetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B8B441BE7866100CCEFD9 /* Aboutusdetail.swift */; settings = {ASSET_TAGS = (); }; };
 		CB2E84C01BC52D23005ACED0 /* CarDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E84BF1BC52D23005ACED0 /* CarDetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CB74F0F81BBACB9600D84E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74F0F61BBACB9600D84E1D /* Main.storyboard */; };
 		CB74F0FD1BBACB9600D84E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74F0FB1BBACB9600D84E1D /* LaunchScreen.storyboard */; };
@@ -27,7 +29,6 @@
 		CBDEED2B1BBAED5000F07FA9 /* ShowCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEED2A1BBAED5000F07FA9 /* ShowCarsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDEED2D1BBAED5E00F07FA9 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEED2C1BBAED5E00F07FA9 /* NewsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDEED2F1BBAED6A00F07FA9 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEED2E1BBAED6A00F07FA9 /* MyInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CBDEED311BBAED7A00F07FA9 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEED301BBAED7A00F07FA9 /* AboutUsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDEED3A1BBAEFA900F07FA9 /* CarSimpleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEED391BBAEFA900F07FA9 /* CarSimpleInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		CBE1E3201BC41D5B0098E9EF /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE1E2F61BC41D5B0098E9EF /* MJRefreshAutoFooter.m */; settings = {ASSET_TAGS = (); }; };
 		CBE1E3211BC41D5B0098E9EF /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE1E2F81BC41D5B0098E9EF /* MJRefreshBackFooter.m */; settings = {ASSET_TAGS = (); }; };
@@ -58,6 +59,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E6B8B431BE7866100CCEFD9 /* Aboutusmain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aboutusmain.swift; sourceTree = "<group>"; };
+		3E6B8B441BE7866100CCEFD9 /* Aboutusdetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aboutusdetail.swift; sourceTree = "<group>"; };
 		CB2E84BF1BC52D23005ACED0 /* CarDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailTableViewController.swift; sourceTree = "<group>"; };
 		CB74F0EF1BBACB9600D84E1D /* 全球平行进口.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "全球平行进口.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB74F0F71BBACB9600D84E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,7 +82,6 @@
 		CBDEED2A1BBAED5000F07FA9 /* ShowCarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCarsViewController.swift; sourceTree = "<group>"; };
 		CBDEED2C1BBAED5E00F07FA9 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		CBDEED2E1BBAED6A00F07FA9 /* MyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
-		CBDEED301BBAED7A00F07FA9 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		CBDEED391BBAEFA900F07FA9 /* CarSimpleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarSimpleInfo.swift; sourceTree = "<group>"; };
 		CBE1E2B21BC41A830098E9EF /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "第三方库/Bridging-Header.h"; sourceTree = "<group>"; };
 		CBE1E2F51BC41D5B0098E9EF /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -203,8 +205,9 @@
 		CBDEED151BBAE8D200F07FA9 /* 关于我们 */ = {
 			isa = PBXGroup;
 			children = (
+				3E6B8B431BE7866100CCEFD9 /* Aboutusmain.swift */,
+				3E6B8B441BE7866100CCEFD9 /* Aboutusdetail.swift */,
 				CBDEED1F1BBAE94800F07FA9 /* AboutUs.storyboard */,
-				CBDEED301BBAED7A00F07FA9 /* AboutUsViewController.swift */,
 			);
 			path = "关于我们";
 			sourceTree = "<group>";
@@ -494,14 +497,15 @@
 				CBE1E33E1BC41D610098E9EF /* MenuTransitionAnimator.swift in Sources */,
 				CB75E77C1BC4C4340072EE9F /* CarsCollectionViewCell.swift in Sources */,
 				CBE1E3311BC41D5B0098E9EF /* UIScrollView+MJRefresh.m in Sources */,
+				3E6B8B451BE7866100CCEFD9 /* Aboutusmain.swift in Sources */,
 				CBE1E32D1BC41D5B0098E9EF /* MJRefreshStateHeader.m in Sources */,
 				CBDEED3A1BBAEFA900F07FA9 /* CarSimpleInfo.swift in Sources */,
 				CBE1E3221BC41D5B0098E9EF /* MJRefreshComponent.m in Sources */,
+				3E6B8B461BE7866100CCEFD9 /* Aboutusdetail.swift in Sources */,
 				CBE1E32A1BC41D5B0098E9EF /* MJRefreshBackStateFooter.m in Sources */,
 				CBE1E33C1BC41D610098E9EF /* MenuItemsAnimator.swift in Sources */,
 				CBBA9EC81BC518BC00C46105 /* CarsOfBrandViewController.swift in Sources */,
 				CBE1E3241BC41D5B0098E9EF /* MJRefreshHeader.m in Sources */,
-				CBDEED311BBAED7A00F07FA9 /* AboutUsViewController.swift in Sources */,
 				CB2E84C01BC52D23005ACED0 /* CarDetailTableViewController.swift in Sources */,
 				CBE1E3261BC41D5B0098E9EF /* MJRefreshAutoNormalFooter.m in Sources */,
 				CBBB8A851BC7BBFD005DC56D /* MoreImageCollectionViewCell.swift in Sources */,

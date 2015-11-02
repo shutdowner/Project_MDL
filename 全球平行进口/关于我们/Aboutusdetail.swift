@@ -1,14 +1,14 @@
 //
-//  AboutUsViewController.swift
-//  全球平行进口
+//  ViewController2.swift
+//  about us
 //
-//  Created by 王卓 on 15/9/30.
-//  Copyright © 2015年 538_iOS_Team. All rights reserved.
+//  Created by ZYJ on 15/11/1.
+//  Copyright © 2015年 ZYJ. All rights reserved.
 //
 
 import UIKit
 
-class AboutUsViewController: UIViewController {
+class Aboutusdetail: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

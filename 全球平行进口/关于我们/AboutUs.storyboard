@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GMg-Py-5YW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--AboutUs-->
         <scene sceneID="KeS-3l-qka">
             <objects>
-                <viewController title="AboutUs" id="pkx-Bc-gC0" customClass="AboutUsViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AboutUs" id="pkx-Bc-gC0" customClass="Aboutusmain" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bve-PK-m9l"/>
                         <viewControllerLayoutGuide type="bottom" id="Pmn-dd-Am1"/>
@@ -22,19 +23,54 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qsb-Bp-ezd">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pkx-Bc-gC0" id="ZhO-7y-qrr"/>
+                                    <outlet property="delegate" destination="pkx-Bc-gC0" id="bBh-qw-33C"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Qsb-Bp-ezd" firstAttribute="bottom" secondItem="fyO-Ej-Ryu" secondAttribute="bottomMargin" id="3T6-Mn-zDe"/>
                             <constraint firstItem="OKu-yK-6gu" firstAttribute="centerY" secondItem="fyO-Ej-Ryu" secondAttribute="centerY" id="B1X-EI-KF9"/>
+                            <constraint firstItem="Qsb-Bp-ezd" firstAttribute="top" secondItem="fyO-Ej-Ryu" secondAttribute="topMargin" constant="64" id="SIh-Lz-4Pr"/>
                             <constraint firstItem="OKu-yK-6gu" firstAttribute="centerX" secondItem="fyO-Ej-Ryu" secondAttribute="centerX" id="Tjv-KW-MPf"/>
+                            <constraint firstItem="Qsb-Bp-ezd" firstAttribute="leading" secondItem="fyO-Ej-Ryu" secondAttribute="leadingMargin" constant="-20" id="pQL-UZ-C8g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qsb-Bp-ezd" secondAttribute="trailing" constant="-20" id="v97-qc-fr8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="关于我们" id="lv5-EX-Xdw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableviewaboutus" destination="Qsb-Bp-ezd" id="RxF-SR-VO0"/>
+                        <segue destination="EEI-Ek-VXS" kind="push" id="aEw-Ua-cS6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yH-8w-CN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="236"/>
+            <point key="canvasLocation" x="1127" y="205"/>
+        </scene>
+        <!--Aboutusdetail-->
+        <scene sceneID="MnS-cr-PoY">
+            <objects>
+                <viewController id="EEI-Ek-VXS" customClass="Aboutusdetail" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nB1-ia-3Im"/>
+                        <viewControllerLayoutGuide type="bottom" id="D8J-O9-Qy9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r5E-gb-k4O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7iM-aY-fdJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTC-Re-uwD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JTh-qa-aIQ">
